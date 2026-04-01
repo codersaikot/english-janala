@@ -1,62 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Janala</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-<!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<!--font intregration-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Manrope:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<!-- Tailwind CSS & daisyui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Janala | Learn English Step by Step</title>
+  <meta
+    name="description"
+    content="English Janala is a modern English learning web app for beginners and intermediate learners with lessons, vocabulary practice, pronunciation, quizzes, and progress tracking."
+  >
+  <meta
+    name="keywords"
+    content="English learning, vocabulary builder, speaking practice, English Janala, ESL, beginner English"
+  >
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="navbar bg-base-100 shadow-sm">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+  <header class="site-header">
+    <div class="navbar app-shell">
+      <div class="navbar-start">
+        <a class="brand" href="#home" aria-label="English Janala home">
+          <span class="brand-text">English</span>
+          <img src="./assets/logo.png" alt="English Janala logo">
+          <span class="brand-text">Janala</span>
+        </a>
       </div>
-      <ul
-        tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+
+      <div class="navbar-center hidden lg:flex">
+        <nav aria-label="Primary">
+          <ul class="menu menu-horizontal header-menu">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#lessons">Lessons</a></li>
+            <li><a href="#saved-words">Saved</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
           </ul>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
+        </nav>
+      </div>
+
+      <div class="navbar-end">
+        <a href="#lessons" class="btn btn-primary hero-cta">Start Learning</a>
+      </div>
     </div>
-    <a class="flex items-center gap-2 normal-case text-xl">
-      <span class="text-lg">English</span>
-      <img src="./assets/logo.png" alt="">
-      <span class="tex">Janala</span>
-    </a>
-  </div>
-  <div class="navbar-end hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><a href=""class="btn btn-outline btn-primary" >FAQ</a></li>
-      <li><a href=""class="btn btn-outline btn-primary">Learn</a></li>
-      <li><a href=""class="btn btn-outline btn-primary">Login</a></li>
-    </ul>
-  </div>
-</div>
-    </header>
+  </header>
 
+  <main id="home">
+    <section class="hero-section">
+      <div class="app-shell hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">English learning made practical</span>
+          <h1>Build speaking, reading, writing, and vocabulary confidence every day.</h1>
+          <p>
+            English Janala is designed for beginner to intermediate learners with small lessons,
+            clear examples, pronunciation support, and a progress-first dashboard experience.
+          </p>
 
+          <div class="hero-actions">
+            <a href="#lessons" class="btn btn-primary">Explore Lessons</a>
+            <a href="#roadmap" class="btn btn-outline">See Full Product Plan</a>
+          </div>
+
+          <div class="hero-stats" id="features">
+            <article class="stat-card">
+              <strong>6+</strong>
+              <span>Learning modes</span>
+            </article>
+            <article class="stat-card">
+              <strong>Daily</strong>
+              <span>Vocabulary practice</span>
+            </article>
+            <article class="stat-card">
+              <strong>Responsive</strong>
+              <span>Mobile friendly design</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-panel">
+            <img src="./assets/hero-student.png" alt="Student learning English">
+            <div class="progress-card">
+              <span>Weekly Progress</span>
+              <strong>72%</strong>
+              <div class="progress progress-accent h-2" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard-preview">
+      <div class="app-shell dashboard-grid">
+        <article class="surface-card metric-card">
+          <span>Lessons Completed</span>
+          <strong>12</strong>
+          <p>Track daily progress and keep your learning streak alive.</p>
+        </article>
+        <article class="surface-card metric-card">
+          <span>Words Saved</span>
+          <strong id="saved-count">0</strong>
+          <p>Your favorite vocabulary stays ready for review and practice.</p>
+        </article>
+        <article class="surface-card metric-card">
+          <span>Speaking Focus</span>
+          <strong>AI Ready</strong>
+          <p>Prepared for future speech-to-text and conversation coaching.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="lessons" class="lesson-section">
+      <div class="app-shell">
+        <div class="section-heading">
+          <span class="eyebrow">Vocabulary builder</span>
+          <h2>Choose a lesson and start learning word by word.</h2>
+          <p>
+            Lessons are loaded from the provided API. You can browse by level, search globally,
+            hear pronunciation, view details, and save vocabulary for later revision.
+          </p>
+        </div>
+
+        <div class="lesson-toolbar">
+          <div id="lesson-buttons" class="lesson-button-wrap" aria-live="polite"></div>
+
+          <label class="search-box" for="search-input">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Search any word..."
+              autocomplete="off"
+            >
+          </label>
+        </div>
+
+        <div id="loading-indicator" class="loading-state hidden" aria-live="polite">
+          <span class="loading loading-spinner loading-lg text-primary"></span>
+          <p>Loading vocabulary...</p>
+        </div>
+
+        <div id="status-message" class="surface-card empty-state">
+          <span class="badge badge-primary badge-outline">Start here</span>
+          <h3>Select a lesson to load vocabulary cards.</h3>
+          <p>
+            You can also search by typing in the search box. Searching will reset the active lesson button.
+          </p>
+        </div>
+
+        <section aria-label="Vocabulary cards">
+          <div id="word-grid" class="word-grid"></div>
+        </section>
+      </div>
+    </section>
+
+    <section id="saved-words" class="saved-section">
+      <div class="app-shell">
+        <div class="section-heading left">
+          <span class="eyebrow">Revision area</span>
+          <h2>Your saved words</h2>
+          <p>Bookmark vocabulary you want to revise later. Saved items are stored in your browser.</p>
+        </div>
+        <div id="saved-grid" class="saved-grid"></div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="roadmap-section">
+      <div class="app-shell roadmap-grid">
+        <article class="surface-card roadmap-card">
+          <span class="roadmap-step">Phase 1</span>
+          <h3>Frontend MVP</h3>
+          <p>Lessons, word cards, saved words, search, pronunciation, modal details, and responsive UI.</p>
+        </article>
+        <article class="surface-card roadmap-card">
+          <span class="roadmap-step">Phase 2</span>
+          <h3>Full Product Backend</h3>
+          <p>User auth, lesson management, quizzes, progress tracking, bookmarks, and analytics APIs.</p>
+        </article>
+        <article class="surface-card roadmap-card">
+          <span class="roadmap-step">Phase 3</span>
+          <h3>Advanced Learning</h3>
+          <p>AI conversation practice, speech recognition, badges, streaks, and adaptive daily routines.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="app-shell footer-row">
+      <p>English Janala helps learners improve step by step with practical English tools.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <dialog id="word-modal" class="modal">
+    <div class="modal-box word-modal-box">
+      <button id="modal-close-top" class="btn btn-sm btn-circle btn-ghost modal-close" type="button" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="word-modal-content"></div>
+      <div class="modal-action">
+        <button id="modal-close-bottom" type="button" class="btn btn-primary">Complete Learning</button>
+      </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+      <button aria-label="Close">close</button>
+    </form>
+  </dialog>
+
+  <script src="./js/app.js"></script>
 </body>
 </html>
