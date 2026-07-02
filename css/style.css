@@ -149,6 +149,26 @@ a {
   margin: 1.5rem 0 2rem;
 }
 
+.hero-badges,
+.footer-links,
+.roadmap-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero-badges {
+  margin-bottom: 1.5rem;
+}
+
+.hero-badge {
+  padding: 0.7rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(15, 98, 254, 0.06);
+  color: var(--primary-deep);
+  font-weight: 700;
+}
+
 .hero-stats,
 .dashboard-grid,
 .roadmap-grid {
@@ -389,6 +409,61 @@ a {
   font-size: 0.9rem;
   font-weight: 800;
   color: var(--success);
+}
+
+.roadmap-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+
+.roadmap-list {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text-soft);
+}
+
+.roadmap-list li {
+  flex: 1 1 220px;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.feature-card,
+.cta-strip {
+  padding: 1.5rem;
+}
+
+.feature-card h3,
+.cta-strip h2 {
+  margin: 0.75rem 0 0.5rem;
+  letter-spacing: -0.03em;
+}
+
+.cta-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--text-soft);
+  font-weight: 700;
+}
+
+.footer-links a:hover,
+.header-menu a:hover {
+  color: var(--primary);
+}
+
+.app-shell .section-heading + .dashboard-grid,
+.app-shell .section-heading + .roadmap-grid {
+  margin-top: 0;
 }
 
 .word-modal-box {

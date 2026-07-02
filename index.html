@@ -4,20 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>English Janala | Learn English Step by Step</title>
-  <meta
-    name="description"
-    content="English Janala is a modern English learning web app for beginners and intermediate learners with lessons, vocabulary practice, pronunciation, quizzes, and progress tracking."
-  >
-  <meta
-    name="keywords"
-    content="English learning, vocabulary builder, speaking practice, English Janala, ESL, beginner English"
-  >
   <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Manrope:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -25,169 +17,186 @@
   <header class="site-header">
     <div class="navbar app-shell">
       <div class="navbar-start">
-        <a class="brand" href="#home" aria-label="English Janala home">
-          <span class="brand-text">English</span>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden" aria-label="Open navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-56 p-2 shadow header-menu">
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#login">Login</a></li>
+          </ul>
+        </div>
+        <a href="#top" class="brand" aria-label="English Janala home">
+          <span class="text-lg">English</span>
           <img src="./assets/logo.png" alt="English Janala logo">
-          <span class="brand-text">Janala</span>
+          <span class="brand-text text-lg">Janala</span>
         </a>
       </div>
-
       <div class="navbar-center hidden lg:flex">
-        <nav aria-label="Primary">
-          <ul class="menu menu-horizontal header-menu">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#lessons">Lessons</a></li>
-            <li><a href="#saved-words">Saved</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-          </ul>
-        </nav>
+        <ul class="menu menu-horizontal px-1 header-menu gap-2">
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
       </div>
-
-      <div class="navbar-end">
-        <a href="#lessons" class="btn btn-primary hero-cta">Start Learning</a>
+      <div class="navbar-end hidden lg:flex gap-3">
+        <a href="#login" class="btn btn-ghost">Login</a>
+        <a href="#get-started" class="btn btn-primary hero-cta">Start learning</a>
       </div>
     </div>
   </header>
 
-  <main id="home">
+  <main id="top">
     <section class="hero-section">
       <div class="app-shell hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">English learning made practical</span>
-          <h1>Build speaking, reading, writing, and vocabulary confidence every day.</h1>
-          <p>
-            English Janala is designed for beginner to intermediate learners with small lessons,
-            clear examples, pronunciation support, and a progress-first dashboard experience.
-          </p>
+          <span class="eyebrow">
+            <i class="fa-solid fa-sparkles" aria-hidden="true"></i>
+            Bangla-first IELTS learning for absolute beginners
+          </span>
+          <h1>Learn English from zero and grow toward your target IELTS band.</h1>
+          <p>English Janala blends step-by-step lessons, beginner-friendly Bangla support, gamification, and exam practice into one guided learning journey.</p>
 
           <div class="hero-actions">
-            <a href="#lessons" class="btn btn-primary">Explore Lessons</a>
-            <a href="#roadmap" class="btn btn-outline">See Full Product Plan</a>
+            <a href="#get-started" class="btn btn-primary hero-cta">Start your roadmap</a>
+            <a href="#roadmap" class="btn btn-outline">Explore levels</a>
           </div>
 
-          <div class="hero-stats" id="features">
-            <article class="stat-card">
-              <strong>6+</strong>
-              <span>Learning modes</span>
-            </article>
-            <article class="stat-card">
-              <strong>Daily</strong>
-              <span>Vocabulary practice</span>
-            </article>
-            <article class="stat-card">
-              <strong>Responsive</strong>
-              <span>Mobile friendly design</span>
-            </article>
+          <div class="hero-badges">
+            <span class="badge badge-outline hero-badge">XP rewards</span>
+            <span class="badge badge-outline hero-badge">Bangla explanations</span>
+            <span class="badge badge-outline hero-badge">IELTS mock tests</span>
+            <span class="badge badge-outline hero-badge">AI-ready architecture</span>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>3 levels</strong>
+              <span>Foundation, Intermediate, IELTS</span>
+            </div>
+            <div class="stat-card">
+              <strong>5-10 min</strong>
+              <span>Beginner-friendly lesson length</span>
+            </div>
+            <div class="stat-card">
+              <strong>24/7</strong>
+              <span>Self-paced learning with progress tracking</span>
+            </div>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-panel">
-            <img src="./assets/hero-student.png" alt="Student learning English">
-            <div class="progress-card">
-              <span>Weekly Progress</span>
-              <strong>72%</strong>
-              <div class="progress progress-accent h-2" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-fill"></div>
-              </div>
+        <div class="hero-panel">
+          <img src="./assets/hero-student.png" alt="Student learning with English Janala" loading="eager">
+          <div class="progress-card">
+            <span class="badge badge-primary badge-outline">Today’s progress</span>
+            <strong>72%</strong>
+            <p class="mb-3">You are one lesson away from unlocking the next practice set.</p>
+            <div class="progress h-3">
+              <div class="progress-fill"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="dashboard-preview">
-      <div class="app-shell dashboard-grid">
-        <article class="surface-card metric-card">
-          <span>Lessons Completed</span>
-          <strong>12</strong>
-          <p>Track daily progress and keep your learning streak alive.</p>
-        </article>
-        <article class="surface-card metric-card">
-          <span>Words Saved</span>
-          <strong id="saved-count">0</strong>
-          <p>Your favorite vocabulary stays ready for review and practice.</p>
-        </article>
-        <article class="surface-card metric-card">
-          <span>Speaking Focus</span>
-          <strong>AI Ready</strong>
-          <p>Prepared for future speech-to-text and conversation coaching.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="lessons" class="lesson-section">
-      <div class="app-shell">
-        <div class="section-heading">
-          <span class="eyebrow">Vocabulary builder</span>
-          <h2>Choose a lesson and start learning word by word.</h2>
-          <p>
-            Lessons are loaded from the provided API. You can browse by level, search globally,
-            hear pronunciation, view details, and save vocabulary for later revision.
-          </p>
-        </div>
-
-        <div class="lesson-toolbar">
-          <div id="lesson-buttons" class="lesson-button-wrap" aria-live="polite"></div>
-
-          <label class="search-box" for="search-input">
-            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-            <input
-              id="search-input"
-              type="search"
-              placeholder="Search any word..."
-              autocomplete="off"
-            >
-          </label>
-        </div>
-
-        <div id="loading-indicator" class="loading-state hidden" aria-live="polite">
-          <span class="loading loading-spinner loading-lg text-primary"></span>
-          <p>Loading vocabulary...</p>
-        </div>
-
-        <div id="status-message" class="surface-card empty-state">
-          <span class="badge badge-primary badge-outline">Start here</span>
-          <h3>Select a lesson to load vocabulary cards.</h3>
-          <p>
-            You can also search by typing in the search box. Searching will reset the active lesson button.
-          </p>
-        </div>
-
-        <section aria-label="Vocabulary cards">
-          <div id="word-grid" class="word-grid"></div>
-        </section>
-      </div>
-    </section>
-
-    <section id="saved-words" class="saved-section">
+    <section class="dashboard-preview" id="features">
       <div class="app-shell">
         <div class="section-heading left">
-          <span class="eyebrow">Revision area</span>
-          <h2>Your saved words</h2>
-          <p>Bookmark vocabulary you want to revise later. Saved items are stored in your browser.</p>
+          <span class="eyebrow">Why learners stay engaged</span>
+          <h2>Designed like a game, structured like a serious IELTS platform.</h2>
+          <p>Every module should reduce fear for beginners while still supporting a high-quality exam journey later.</p>
         </div>
-        <div id="saved-grid" class="saved-grid"></div>
+
+        <div class="dashboard-grid">
+          <article class="surface-card metric-card">
+            <span>Gamification</span>
+            <strong>XP, coins, streaks</strong>
+            <p>Reward daily practice, unlock lessons, and build momentum without making learning feel childish.</p>
+          </article>
+          <article class="surface-card metric-card">
+            <span>Beginner support</span>
+            <strong>Bangla + visuals</strong>
+            <p>Use translation toggles, pronunciation help, and visual vocabulary cards for low-confidence learners.</p>
+          </article>
+          <article class="surface-card metric-card">
+            <span>AI ready</span>
+            <strong>Future-proof backend</strong>
+            <p>Architecture can absorb writing evaluation, speaking analysis, and tutor chat without a rewrite.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="roadmap" class="roadmap-section">
-      <div class="app-shell roadmap-grid">
-        <article class="surface-card roadmap-card">
-          <span class="roadmap-step">Phase 1</span>
-          <h3>Frontend MVP</h3>
-          <p>Lessons, word cards, saved words, search, pronunciation, modal details, and responsive UI.</p>
-        </article>
-        <article class="surface-card roadmap-card">
-          <span class="roadmap-step">Phase 2</span>
-          <h3>Full Product Backend</h3>
-          <p>User auth, lesson management, quizzes, progress tracking, bookmarks, and analytics APIs.</p>
-        </article>
-        <article class="surface-card roadmap-card">
-          <span class="roadmap-step">Phase 3</span>
-          <h3>Advanced Learning</h3>
-          <p>AI conversation practice, speech recognition, badges, streaks, and adaptive daily routines.</p>
-        </article>
+    <section class="roadmap-section" id="roadmap">
+      <div class="app-shell">
+        <div class="section-heading">
+          <span class="eyebrow">Learning roadmap</span>
+          <h2>Three levels from zero English to IELTS exam readiness.</h2>
+          <p>The first release should guide students through clear milestones, short lessons, and visible progress.</p>
+        </div>
+
+        <div class="roadmap-grid">
+          <article class="roadmap-card surface-card">
+            <span class="roadmap-step">Level 1</span>
+            <h3>Foundation English</h3>
+            <p>Alphabet, pronunciation, basic grammar, sentence building, translation practice, and mini quizzes.</p>
+            <ul class="roadmap-list">
+              <li>Bangla support for every lesson</li>
+              <li>Visual vocabulary and audio practice</li>
+              <li>Short, confidence-building exercises</li>
+            </ul>
+          </article>
+          <article class="roadmap-card surface-card">
+            <span class="roadmap-step">Level 2</span>
+            <h3>Intermediate English</h3>
+            <p>Grammar expansion, conversation practice, paragraph writing, reading comprehension, and vocabulary challenges.</p>
+            <ul class="roadmap-list">
+              <li>More independent practice</li>
+              <li>Speaking confidence exercises</li>
+              <li>Revision plans based on weak areas</li>
+            </ul>
+          </article>
+          <article class="roadmap-card surface-card">
+            <span class="roadmap-step">Level 3</span>
+            <h3>IELTS Preparation</h3>
+            <p>Listening, reading, writing, and speaking practice with mock tests, feedback, and band score guidance.</p>
+            <ul class="roadmap-list">
+              <li>Exam-style timing and scoring</li>
+              <li>Mock interviews and test history</li>
+              <li>Analytics for band improvement</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-section" id="get-started">
+      <div class="app-shell">
+        <div class="cta-strip surface-card">
+          <div>
+            <span class="eyebrow">Next step</span>
+            <h2>Build the first learning module around Foundation English.</h2>
+            <p>That gives beginners immediate value and creates the core progress engine for everything else.</p>
+          </div>
+          <div class="hero-actions">
+            <a href="#community" class="btn btn-primary hero-cta">Community preview</a>
+            <a href="#roadmap" class="btn btn-outline">Review roadmap</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="saved-section" id="community">
+      <div class="app-shell">
+        <div class="section-heading left">
+          <span class="eyebrow">Community and support</span>
+          <h2>Speaking partners, study groups, and peer feedback later on.</h2>
+          <p>Community features should support habit-building and accountability after the core learning loop is stable.</p>
+        </div>
       </div>
     </section>
   </main>
@@ -195,25 +204,12 @@
   <footer class="site-footer">
     <div class="app-shell footer-row">
       <p>English Janala helps learners improve step by step with practical English tools.</p>
-      <a href="#home">Back to top</a>
-    </div>
-  </footer>
-
-  <dialog id="word-modal" class="modal">
-    <div class="modal-box word-modal-box">
-      <button id="modal-close-top" class="btn btn-sm btn-circle btn-ghost modal-close" type="button" aria-label="Close modal">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      <div id="word-modal-content"></div>
-      <div class="modal-action">
-        <button id="modal-close-bottom" type="button" class="btn btn-primary">Complete Learning</button>
+      <div class="footer-links">
+        <a href="#roadmap">Roadmap</a>
+        <a href="#features">Features</a>
+        <a href="#top">Back to top</a>
       </div>
     </div>
-    <form method="dialog" class="modal-backdrop">
-      <button aria-label="Close">close</button>
-    </form>
-  </dialog>
-
-  <script src="./js/app.js"></script>
+  </footer>
 </body>
 </html>
